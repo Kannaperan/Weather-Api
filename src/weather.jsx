@@ -12,7 +12,7 @@ function Weather(){
     }
   
     function getWeather(){
-      var weatherData = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={c0bed3fa8e73e0a65b98f64940459d60}`)
+      var weatherData = axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c0bed3fa8e73e0a65b98f64940459d60`)
       weatherData.then(function(success)
       {console.log(success.data)
         setweather(success.data.weather[0].main)
